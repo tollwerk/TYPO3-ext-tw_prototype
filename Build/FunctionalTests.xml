@@ -15,7 +15,7 @@
 
     <testsuites>
         <testsuite name="EXT:tw_prototype">
-            <directory>../Functional/</directory>
+            <directory>../Tests/Unit/</directory>
         </testsuite>
     </testsuites>
 </phpunit>

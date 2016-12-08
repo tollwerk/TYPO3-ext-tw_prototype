@@ -4,7 +4,7 @@ namespace Tollwerk\TwPrototype\Tests\Unit\Controller;
  *  Copyright notice
  *
  *  (c) 2016 Joschi Kuphal <joschi@tollwerk.de>, tollwerk GmbH
- *  			
+ *
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -46,6 +46,10 @@ class PersonControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 	{
 		unset($this->subject);
 	}
+
+	public function testBla() {
+
+    }
 
 	/**
 	 * @test
