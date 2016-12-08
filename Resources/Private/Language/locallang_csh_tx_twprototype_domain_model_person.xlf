@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-12-08T10:17:19Z" product-name="tw_prototype">
+		<header/>
+		<body>
+			<trans-unit id="given_name.description">
+				<source>Given name</source>
+			</trans-unit>
+			<trans-unit id="family_name.description">
+				<source>Family Name</source>
+			</trans-unit>
+			<trans-unit id="birthday.description">
+				<source>Birthday</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

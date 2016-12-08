@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-12-08T10:17:19Z" product-name="tw_prototype">
+		<header/>
+		<body>
+			<trans-unit id="tx_twprototype_domain_model_person">
+				<source>Person</source>
+			</trans-unit>
+			<trans-unit id="tx_twprototype_domain_model_person.given_name">
+				<source>Given Name</source>
+			</trans-unit>
+			<trans-unit id="tx_twprototype_domain_model_person.family_name">
+				<source>Family Name</source>
+			</trans-unit>
+			<trans-unit id="tx_twprototype_domain_model_person.birthday">
+				<source>Birthday</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
