@@ -33,44 +33,17 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***********************************************************************************/
 
-namespace Tollwerk\TwPrototype\Controller;
+namespace Tollwerk\TwPrototype\Component\UserInterface;
+
+use Tollwerk\TwComponentlibrary\Component\TypoScriptComponent;
 
 /**
- * Person controller
+ * Navigation component
  *
  * @package Tollwerk\TwPrototype
- * @subpackage Tollwerk\TwPrototype\Controller
+ * @subpackage Tollwerk\TwPrototype\Component
  */
-class PersonController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+class NavigationComponent extends TypoScriptComponent
 {
 
-    /**
-     * personRepository
-     *
-     * @var \Tollwerk\TwPrototype\Domain\Repository\PersonRepository
-     * @inject
-     */
-    protected $personRepository = null;
-
-    /**
-     * action list
-     *
-     * @return void
-     */
-    public function listAction()
-    {
-        $persons = $this->personRepository->findAll();
-        $this->view->assign('persons', $persons);
-    }
-
-    /**
-     * action show
-     *
-     * @param \Tollwerk\TwPrototype\Domain\Model\Person $person
-     * @return void
-     */
-    public function showAction(\Tollwerk\TwPrototype\Domain\Model\Person $person)
-    {
-        $this->view->assign('person', $person);
-    }
 }
