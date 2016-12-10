@@ -1,0 +1,6 @@
+lib.component = COA
+lib.component {
+    10 = TEXT
+    10.data = GP:text
+    stdWrap.wrap = <button type="button">|</button>
+}

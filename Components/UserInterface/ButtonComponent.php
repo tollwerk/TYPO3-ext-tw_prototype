@@ -38,12 +38,25 @@ namespace Tollwerk\TwPrototype\Component\UserInterface;
 use Tollwerk\TwComponentlibrary\Component\TypoScriptComponent;
 
 /**
- * Navigation component
+ * Button component
  *
  * @package Tollwerk\TwPrototype
  * @subpackage Tollwerk\TwPrototype\Component
  */
-class NavigationComponent extends TypoScriptComponent
+class ButtonComponent extends TypoScriptComponent
 {
-
+    /**
+     * Configure the component
+     *
+     * Gets called immediately after construction. Override this method in components to set their properties.
+     *
+     * @return void
+     */
+    protected function configure()
+    {
+        $this->setTypoScriptKey('lib.component');
+        $this->addNotice("# Button component\n\nThis is a simple button component rendered by TypoScript.");
+        $this->request->setArgument('text', 'Label');
+        $this->preview->addStylesheet('/path/to/main.css');
+    }
 }
