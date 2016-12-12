@@ -1,1 +1,5 @@
-<!-- Person list -->
+<ul>
+    <f:for each="{persons}" as="person">
+        <f:render partial="Person/Portrait" arguments="{person: person}"/>
+    </f:for>
+</ul>

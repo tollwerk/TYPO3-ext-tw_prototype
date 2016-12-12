@@ -7,13 +7,19 @@
 				<source>Person</source>
 			</trans-unit>
 			<trans-unit id="tx_twprototype_domain_model_person.given_name">
-				<source>Given Name</source>
+				<source>Given name</source>
 			</trans-unit>
 			<trans-unit id="tx_twprototype_domain_model_person.family_name">
-				<source>Family Name</source>
+				<source>Family name</source>
 			</trans-unit>
 			<trans-unit id="tx_twprototype_domain_model_person.birthday">
 				<source>Birthday</source>
+			</trans-unit>
+			<trans-unit id="tx_twprototype_domain_model_person.portrait">
+				<source>Portrait</source>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type.person">
+				<source>Persons</source>
 			</trans-unit>
 		</body>
 	</file>

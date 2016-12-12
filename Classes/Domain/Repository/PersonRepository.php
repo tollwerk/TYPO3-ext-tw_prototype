@@ -1,11 +1,19 @@
 <?php
 namespace Tollwerk\TwPrototype\Domain\Repository;
 
-/***************************************************************
+/**
+ * data
  *
- *  Copyright notice
- *
- *  (c) 2016 Joschi Kuphal <joschi@tollwerk.de>, tollwerk GmbH
+ * @category Tollwerk
+ * @package Tollwerk\TwPrototype
+ * @subpackage Tollwerk\TwPrototype\Component
+ * @author Joschi Kuphal <joschi@tollwerk.de> / @jkphl
+ * @copyright Copyright © 2016 Joschi Kuphal <joschi@tollwerk.de> / @jkphl
+ * @license http://opensource.org/licenses/MIT The MIT License (MIT)
+ */
+
+/***********************************************************************************
+ *  Copyright © 2016 Joschi Kuphal <joschi@kuphal.net> / @jkphl
  *
  *  All rights reserved
  *
@@ -24,13 +32,24 @@ namespace Tollwerk\TwPrototype\Domain\Repository;
  *  GNU General Public License for more details.
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
- ***************************************************************/
+ ***********************************************************************************/
 
 /**
- * The repository for Persons
+ * Person repository
+ *
+ * @package Tollwerk\TwPrototype
+ * @subpackage Tollwerk\TwPrototype\Domain
  */
 class PersonRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
-
-
+    /**
+     * Repository initialization
+     */
+    public function initializeObject()
+    {
+        /** @var $querySettings \TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings */
+        $querySettings = $this->objectManager->get('TYPO3\\CMS\\Extbase\\Persistence\\Generic\\Typo3QuerySettings');
+        $querySettings->setRespectStoragePage(false);
+        $this->setDefaultQuerySettings($querySettings);
+    }
 }

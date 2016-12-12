@@ -9,6 +9,7 @@ CREATE TABLE tx_twprototype_domain_model_person (
 	given_name varchar(255) DEFAULT '' NOT NULL,
 	family_name varchar(255) DEFAULT '' NOT NULL,
 	birthday date DEFAULT '0000-00-00',
+	portrait int(11) unsigned NOT NULL default '0',
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
