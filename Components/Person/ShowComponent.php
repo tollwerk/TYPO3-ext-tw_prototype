@@ -36,6 +36,7 @@
 namespace Tollwerk\TwPrototype\Component\Person;
 
 use Tollwerk\TwComponentlibrary\Component\ExtbaseComponent;
+use Tollwerk\TwPrototype\Controller\PersonController;
 
 /**
  * Show component
@@ -45,5 +46,17 @@ use Tollwerk\TwComponentlibrary\Component\ExtbaseComponent;
  */
 class ShowComponent extends ExtbaseComponent
 {
-
+    /**
+     * Configure the component
+     *
+     * Gets called immediately after construction. Override this method in components to set their properties.
+     *
+     * @return void
+     */
+    protected function configure()
+    {
+        $this->setExtbaseConfiguration('Person', PersonController::class, 'show');
+        echo get_class($this->preview);
+        $this->preview->addStylesheet('/path/to/main.css');
+    }
 }
