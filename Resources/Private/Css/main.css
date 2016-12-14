@@ -1,0 +1,11 @@
+body {
+    color: red;
+}
+
+@import "include/sub.css";
+
+a {
+    critical-selector: this;
+    color: green;
+    text-decoration: none;
+}
