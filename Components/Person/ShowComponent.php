@@ -56,7 +56,7 @@ class ShowComponent extends ExtbaseComponent
     protected function configure()
     {
         $this->setExtbaseConfiguration('Person', PersonController::class, 'show');
-        echo get_class($this->preview);
+        $this->setControllerActionArgument('person', 1);
         $this->preview->addStylesheet('/path/to/main.css');
     }
 }
